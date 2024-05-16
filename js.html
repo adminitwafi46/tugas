@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Jawaban :
+    <h1 id="jawaban">Ini adalah jawaban</h1>
+    <button onclick="perkalian(5, 7)">Ini Perkalian</button>
+    
+    <p>
+        <input type="number" id="x">
+        <br>
+        <input type="number" id="y">
+        <br>
+        <button onclick="kalkulator()">Liat Jawaban</button>
+        <h1 id="kalkulator">Jawaban</h1>
+    </p>
+
+    <script>
+        //berinama fungsi
+        function perkalian(x, y){
+            document.getElementById("jawaban").innerHTML = x * y
+        }
+        //buat fungsi bernaka kalkulator
+        function kalkulator(){
+            var x = document.getElementById("x").value
+            var y = document.getElementById("y").value
+            document.getElementById("kalkulator").innerHTML = x * y
+        }
+    </script>
+</body>
+</html>
